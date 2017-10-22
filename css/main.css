@@ -66,3 +66,19 @@
             position:relative;
             
         }
+        #list{
+            position: relative;
+            left:8%;
+            float:left;
+            width:60%;
+            border-bottom: 2px lightgrey solid;
+            border-top: 2px lightgrey solid;;
+            font-family: "Apple Braille", "fantasy";
+
+        }
+        #list_a{
+            text-decoration: none;
+            font-size: 160%;
+            color:darkslategray;
+        }
+      
