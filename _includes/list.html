@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任庭玉的博客</title>
+    <style>
+        #container,body,html{
+            height:100%;
+        }
+        #list{
+            position: relative;
+            top:-40%;
+            left:8%;
+            float:left;
+            width:60%;
+            border-bottom: 2px lightgrey solid;
+            border-top: 2px lightgrey solid;;
+            font-family: "Apple Braille", "fantasy";
+
+        }
+        #list_a{
+            text-decoration: none;
+            font-size: 160%;
+            color:darkslategray;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    {% for post in paginator.posts %}
+    <div id="list">
+        <a id="list_a" href="{{post.url}}">{{ post.title }}</a>
+        <p>{{ post.excerpt }}</p>
+    </div>
+    {% endfor %}
+    
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+  {% else %}
+    <span>&laquo; Prev</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <em>{{ page }}</em>
+    {% elsif page == 1 %}
+      <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+  {% else %}
+    <span>Next &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}
+</div>
+</div>
+</body>
+</html>
