@@ -70,4 +70,18 @@
             font-size: 160%;
             color:darkslategray;
         }
+        #footer{
+            position:fixed;
+            bottom:0;
+            width:100%;
+            height:15%;
+            color:grey;
+            font-family: "Apple Braille", "fantasy";
+            text-align: center;
+            background-color:white;
+        }
+        #footer_a{
+            text-decoration: none;
+            color:darkslategrey;
+        }
       
