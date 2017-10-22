@@ -18,9 +18,10 @@
             top:150px;
         }
         .p2{
-            position: absolute;
+            position: fixed;
             margin:0;
             padding:0;
+            top:200px;
             font-size: 150%;
             color: white;
             font-family: "Apple Braille", "fantasy";
