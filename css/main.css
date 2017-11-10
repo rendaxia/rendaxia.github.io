@@ -58,6 +58,7 @@
             text-align: center;
             position:relative;
             height: 800px;
+            line-height:20px;
         }
         #list{
             top: 100px;
