@@ -9,6 +9,19 @@
 	<p class="text-center"><a href="{{post.url}}" class="btn btn-action">查看全文</a></p>
     </div>
     {% endfor %}
+	
+   {% for post in paginator.posts %}
+    <article class="post">
+	<header class="entry-header">
+		<div class="entry-meta"> 
+			<span class="posted-on"><time class="entry-date published" date="2013-09-27">September 27, 2013</time></span>			
+		</div>
+		<h1 class="entry-title"><a href="{{post.url}}" rel="bookmark">{{ post.title }}</a></h1>
+	</header>
+	<div class="entry-content">
+		<p>{{ post.excerpt }}</p>
+	</div>
+    </article>
     
   {% if paginator.total_pages > 1 %}
   <div class="pagination">
