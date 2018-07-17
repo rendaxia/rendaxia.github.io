@@ -4,6 +4,9 @@ description: 123
 ---
 {% include head.html %}
 
+{% for post in paginator.posts %}
+	                          <h3>1111<h3>
+			       {% endfor %}
 
 <header id="header">
 	<div id="head" class="parallax" parallax-speed="1">
@@ -33,6 +36,10 @@ description: 123
 	</nav>
 </header>
 
+{% for post in paginator.posts %}
+	                          <h3>1111<h3>
+			       {% endfor %}
+
 <main id="main">
 
 	<div class="container">
@@ -49,9 +56,7 @@ description: 123
 						<p>Mauris eget quam orci. Quisque porta varius dui, quis posuere nibh mollis quis. Mauris commodo rhoncus porttitor. Maecenas et euismod elit. Nulla facilisi. Vivamus lacus libero, ultrices non ullamcorper ac, tempus sit amet enim. Suspendisse at semper ipsum. Suspendisse sagittis diam a massa viverra sollicitudin. Vivamus sagittis est eu diam fringilla nec tristique metus vestibulum. Donec magna purus, pellentesque vel lobortis ut, convallis id augue. Sed odio magna, pellentesque eget convallis ac, vehicula vel arcu. Sed eu scelerisque dui. Sed eu arcu at nibh hendrerit viverra. Vivamus lacus augue, sodales id cursus in, condimentum at risus. <a href="single.html" class="more-link">Continue reading&#8230;</a></p>
 					</div>
 				</article><!-- #post-## --> 
-			       {% for post in paginator.posts %}
-	                          <h3>1111<h3>
-			       {% endfor %}
+			       
 			</div>
 		</div>
 
