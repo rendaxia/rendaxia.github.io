@@ -49,20 +49,10 @@
  						<div class="entry-meta"> 
  							<span class="posted-on"><time class="entry-date published" date="2013-06-17">June 17, 2013</time></span>			
  						</div> 
- 						<h1 class="entry-title"><a href="single.html" rel="bookmark">title</a></h1>
+ 						<h1 class="entry-title"><a href="single.html" rel="bookmark">{{ page.title | escape }}</a></h1>
 					</header> 
 					<div class="entry-content">
-						<p>
-						</p>
-						<p>
-						</p>
-						
-						<blockquote>
-						</blockquote>
-						<p></p>
-						<h3></h3>
-						<p></p>
-						</div>
+						{{ content }}
 				</article><!-- #post-## -->
 
 			</div> 
