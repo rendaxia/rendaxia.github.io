@@ -56,8 +56,26 @@ description: 123
 	
 		<div class="row section recentworks topspace">
 			<h2 class="section-title"><span>全部博文</span></h2>
-			{% include list02.html %}
-			{% include pages.html %}
+			<div class="col-sm-6 col-md-3">
+	                          <h3 class="text-center" onclick="javascript:window.location.href='{{post.url}}'">{{ post.title }}</h3>
+                                  <p>考研保研专题</p>
+	                          <p class="text-center"><a href="{{post.url}}" class="btn btn-action">分享保研经验、考研学习笔记</a></p>
+                        </div>
+			<div class="col-sm-6 col-md-3">
+	                          <h3 class="text-center" onclick="javascript:window.location.href='{{post.url}}'">{{ post.title }}</h3>
+                                  <p>软件工程专题</p>
+	                          <p class="text-center"><a href="{{post.url}}" class="btn btn-action">分享计算机组成原理、计算机网络学习笔记</a></p>
+                        </div>
+			<div class="col-sm-6 col-md-3">
+	                          <h3 class="text-center" onclick="javascript:window.location.href='{{post.url}}'">{{ post.title }}</h3>
+                                  <p>WEB</p>
+	                          <p class="text-center"><a href="{{post.url}}" class="btn btn-action">分享seo、redis、nginx学习点滴</a></p>
+                        </div>
+			<div class="col-sm-6 col-md-3">
+	                          <h3 class="text-center" onclick="javascript:window.location.href='{{post.url}}'">{{ post.title }}</h3>
+                                  <p>前端专题</p>
+	                          <p class="text-center"><a href="{{post.url}}" class="btn btn-action">分享前端学习的点点滴滴</a></p>
+                        </div>
 		</div>
 		<!-- /section -->
 	</div>
