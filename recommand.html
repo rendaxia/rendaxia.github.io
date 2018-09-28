@@ -1,0 +1,145 @@
+---
+title: 这里是任庭玉的博客
+description: 123
+---
+
+{% include head.html %}
+
+<header id="header">
+	<div id="head" class="parallax" parallax-speed="2">
+		<h1 id="logo" class="text-center">
+			<img class="img-circle" src="images/guy.jpg" alt="">
+			<span class="title" style="font-size: 95%;">任大侠的博客</span>
+			<span class="tagline">Don't be pushed by your problems,be led by your dreams.<br>
+				<a href="#">ren.ty@foxmail.com</a></span>
+		</h1>
+	</div>
+
+	<nav class="navbar navbar-default navbar-sticky">
+		<div class="container-fluid">
+			
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			</div>
+			
+			<div class="navbar-collapse collapse">
+
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">我的主页</a></li>
+						<li><a href="about.html">关于我</a></li>
+						<li><a href="blog.html">我的博文</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>	
+	</nav>
+</header>
+
+<main id="main">
+
+	<div class="container">
+		
+		<div class="row section topspace">
+			<div class="col-md-12">
+				<p class="lead text-center text-muted">土地是以它的肥沃和收获而被估价的；才能也是土地，不过它生产的不是粮食，而是真理。如果只能滋生瞑想和幻想的话，即使再大的才能也只是砂地或盐池，那上面连小草也长不出来的。—— 别林斯基 </p>
+			</div>
+		</div> <!-- / section -->
+		
+		
+		
+		<div class="row section featured topspace">
+			<h2 class="section-title"><span>最近博文</span></h2>
+			<div class="row">
+				{% include list.html %}
+			</div>
+		</div> 
+		<!-- / section -->
+
+		
+		
+		
+		<div class="row section recentworks topspace">
+			
+			<h2 class="section-title"><span>其他文章推荐</span></h2>
+			
+			<div class="thumbnails recentworks row">
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a class="thumbnail" href="sidebar-right.html">
+						<span class="img" onclick="javascript:window.location.href='https://www.cnblogs.com/chengxiao/p/6104371.html'">
+							<img src="images/logo01.jpg" alt="">
+							<span class="cover"><span class="more">查看详情 &rarr;</span></span>
+						</span>
+						<span class="title">图解排序算法(二)之希尔排序</span>
+					</a>
+					<h4></h4>
+					<p></p>
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a class="thumbnail" href="sidebar-right.html">
+						<span class="img" onclick="javascript:window.location.href='https://blog.csdn.net/jiangzhexi/article/details/56037170'">
+							<img src="images/logo02.jpg" alt="">
+							<span class="cover"><span class="more">查看详情 &rarr;</span></span>
+						</span>
+						<span class="title">写给大数据开发初学者的话</span>
+					</a>
+					<h4></h4>
+					<p></p>
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+					<a class="thumbnail" href="sidebar-right.html">
+						<span class="img" onclick="javascript:window.location.href='https://blog.csdn.net/accumulate_zhang/article/details/53324165'">
+							<img src="images/logo03.jpg" alt="">
+							<span class="cover"><span class="more">查看详情 &rarr;</span></span>
+						</span>
+						<span class="title">一文读懂BP神经网络</span>
+					</a>
+					<h4></h4>
+					<p></p>
+				</div>
+
+			</div>
+		</div>
+		<!-- /section -->
+		<!-- <div class="row section featured topspace">
+			<h2 class="section-title"><span>全部博文</span></h2>
+			
+			<div class="row">
+				<div class="col-sm-6 col-md-3">
+	                          <h3 class="text-center">考研保研专题</h3>
+                                  
+	                          <p class="text-center"><a href="#" class="btn btn-action">查看列表</a></p>
+                                </div>
+				
+				<div class="col-sm-6 col-md-3">
+	                          <h3 class="text-center" onclick="javascript:window.location.href='index.html'">软件工程专题</h3>
+                                  
+	                          <p class="text-center"><a href="#" class="btn btn-action">查看列表</a></p>
+                                </div>
+
+			        <div class="col-sm-6 col-md-3">
+	                          <h3 class="text-center" onclick="javascript:window.location.href='index.html'">WEB</h3>
+                                  
+	                          <p class="text-center"><a href="#" class="btn btn-action">查看列表</a></p>
+                                </div>
+
+			        <div class="col-sm-6 col-md-3">
+	                          <h3 class="text-center" onclick="javascript:window.location.href='index.html'">前端专题</h3>
+                               
+	                          <p class="text-center"><a href="#" class="btn btn-action">查看列表</a></p>
+                                </div>
+			</div>
+		</div> -->
+	
+		
+	</div>
+	<!-- /container -->
+
+</main>
+
+
+{% include footer.html %}

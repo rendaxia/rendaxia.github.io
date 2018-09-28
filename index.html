@@ -40,106 +40,42 @@ description: 123
 <main id="main">
 
 	<div class="container">
-		
-		<div class="row section topspace">
-			<div class="col-md-12">
-				<p class="lead text-center text-muted">土地是以它的肥沃和收获而被估价的；才能也是土地，不过它生产的不是粮食，而是真理。如果只能滋生瞑想和幻想的话，即使再大的才能也只是砂地或盐池，那上面连小草也长不出来的。—— 别林斯基 </p>
-			</div>
-		</div> <!-- / section -->
-		
-		
-		
-		<div class="row section featured topspace">
-			<h2 class="section-title"><span>最近博文</span></h2>
-			<div class="row">
-				{% include list.html %}
-			</div>
-		</div> 
-		<!-- / section -->
-
-		
-		
-		
-		<div class="row section recentworks topspace">
-			
-			<h2 class="section-title"><span>其他文章推荐</span></h2>
-			
-			<div class="thumbnails recentworks row">
-				
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-					<a class="thumbnail" href="sidebar-right.html">
-						<span class="img" onclick="javascript:window.location.href='https://www.cnblogs.com/chengxiao/p/6104371.html'">
-							<img src="images/logo01.jpg" alt="">
-							<span class="cover"><span class="more">查看详情 &rarr;</span></span>
-						</span>
-						<span class="title">图解排序算法(二)之希尔排序</span>
-					</a>
-					<h4></h4>
-					<p></p>
-				</div>
-				
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-					<a class="thumbnail" href="sidebar-right.html">
-						<span class="img" onclick="javascript:window.location.href='https://blog.csdn.net/jiangzhexi/article/details/56037170'">
-							<img src="images/logo02.jpg" alt="">
-							<span class="cover"><span class="more">查看详情 &rarr;</span></span>
-						</span>
-						<span class="title">写给大数据开发初学者的话</span>
-					</a>
-					<h4></h4>
-					<p></p>
-				</div>
-				
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-					<a class="thumbnail" href="sidebar-right.html">
-						<span class="img" onclick="javascript:window.location.href='https://blog.csdn.net/accumulate_zhang/article/details/53324165'">
-							<img src="images/logo03.jpg" alt="">
-							<span class="cover"><span class="more">查看详情 &rarr;</span></span>
-						</span>
-						<span class="title">一文读懂BP神经网络</span>
-					</a>
-					<h4></h4>
-					<p></p>
-				</div>
-
-			</div>
+		<div class="row topspace">
+			<div class="col-sm-8 col-sm-offset-2">
+															
+			    {% include list02.html %}
+ 				
+ 				<!-- <article class="post">
+					<header class="entry-header">
+ 						<div class="entry-meta"> 
+ 							<span class="posted-on"><time class="entry-date published" date="2013-06-17">June 17, 2018</time></span>
+ 						</div> 
+ 						<h1 class="entry-title"><a href="single.html" rel="bookmark">Vivamus Lacus Mauris</a></h1>
+					</header> 
+					<div class="entry-content"> 
+						<p><img alt="" src="images/mac.jpg"></p>
+						<p>Mauris eget quam orci. Quisque porta varius dui, quis posuere nibh mollis quis. Mauris commodo rhoncus porttitor. Maecenas et euismod elit. Nulla facilisi. Vivamus lacus libero, ultrices non ullamcorper ac, tempus sit amet enim. Suspendisse at semper ipsum. Suspendisse sagittis diam a massa viverra sollicitudin. Vivamus sagittis est eu diam fringilla nec tristique metus vestibulum. Donec magna purus, pellentesque vel lobortis ut, convallis id augue. Sed odio magna, pellentesque eget convallis ac, vehicula vel arcu. Sed eu scelerisque dui. Sed eu arcu at nibh hendrerit viverra. Vivamus lacus augue, sodales id cursus in, condimentum at risus. <a href="single.html" class="more-link">Continue reading&#8230;</a></p>
+					</div> 
+				</article> -->
+			</div> 
 		</div>
-		<!-- /section -->
-		<!-- <div class="row section featured topspace">
-			<h2 class="section-title"><span>全部博文</span></h2>
-			
-			<div class="row">
-				<div class="col-sm-6 col-md-3">
-	                          <h3 class="text-center">考研保研专题</h3>
-                                  
-	                          <p class="text-center"><a href="#" class="btn btn-action">查看列表</a></p>
-                                </div>
-				
-				<div class="col-sm-6 col-md-3">
-	                          <h3 class="text-center" onclick="javascript:window.location.href='index.html'">软件工程专题</h3>
-                                  
-	                          <p class="text-center"><a href="#" class="btn btn-action">查看列表</a></p>
-                                </div>
 
-			        <div class="col-sm-6 col-md-3">
-	                          <h3 class="text-center" onclick="javascript:window.location.href='index.html'">WEB</h3>
-                                  
-	                          <p class="text-center"><a href="#" class="btn btn-action">查看列表</a></p>
-                                </div>
-
-			        <div class="col-sm-6 col-md-3">
-	                          <h3 class="text-center" onclick="javascript:window.location.href='index.html'">前端专题</h3>
-                               
-	                          <p class="text-center"><a href="#" class="btn btn-action">查看列表</a></p>
-                                </div>
-			</div>
-		</div> -->
+		<!-- <center class="">
+			<ul class="pagination">
+				<li class="disabled"><a href="">&laquo;</a></li>
+				<li class="active"><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">5</a></li>
+				<li><a href="">6</a></li>
+				<li><a href="">&raquo;</a></li>
+			</ul>
+		</center> -->
 	
-		
-	</div>
-	<!-- /container -->
+
+	</div>	<!-- /container -->
 
 </main>
-
 
 {% include footer.html %}
