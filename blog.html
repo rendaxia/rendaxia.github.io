@@ -6,11 +6,12 @@ description: 123
 {% include head.html %}
 
 <header id="header">
-	<div id="head" class="parallax" parallax-speed="1">
+	<div id="head" class="parallax" parallax-speed="2">
 		<h1 id="logo" class="text-center">
 			<img class="img-circle" src="images/guy.jpg" alt="">
 			<span class="title" style="font-size: 95%;">任大侠的博客</span>
-			<span class="tagline">Don't be pushed by your problems,be led by your dreams.</span>
+			<span class="tagline">Don't be pushed by your problems,be led by your dreams.<br>
+				<a href="#">ren.ty@foxmail.com</a></span>
 		</h1>
 	</div>
 
@@ -20,15 +21,18 @@ description: 123
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
 			</div>
-
+			
 			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<li><a href="index.html">我的主页</a></li>
-					<li><a href="about.html">关于我</a></li>
-					<li class="active"><a href="blog.html">我的博文</a></li>
-				</ul>
-			</div>
 
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">我的主页</a></li>
+						<li><a href="about.html">关于我</a></li>
+						<li><a href="blog.html">我的博文</a></li>
+					</ul>
+				</div>
+
+			</div>
 		</div>	
 	</nav>
 </header>
