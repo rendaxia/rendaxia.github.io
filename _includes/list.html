@@ -2,7 +2,7 @@
 
 
 <div id="lists"> 
-    {% for post in site.posts offset:4 limit:4  %}
+    {% for post in site.posts offset:2 limit:2  %}
     <div class="col-sm-6 col-md-3">
 	<h3 class="text-center" onclick="javascript:window.location.href='{{post.url}}'">{{ post.title }}</h3>
     <p>{{ post.excerpt }}</p>
