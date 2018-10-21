@@ -1,6 +1,6 @@
 kramdown:
   input: GFM
 paginate: 3
-paginate_path: "page:num"
+paginate_path: "jerryblog.me/page:num"
 
 
