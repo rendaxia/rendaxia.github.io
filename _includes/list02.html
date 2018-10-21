@@ -43,7 +43,7 @@
   {% elsif page == 1 %}
 		<li><a href="/index.html">{{ page }}</a></li>
   {% else %}
-		<li><a href="{{ 'page:num' | prepend: site.baseurl |replace: '//', '/' | replace: ':num',page  }}">{{ page }}</a><li>
+		<li><a href="{{ 'https://jerryblog.me/page:num' | prepend: site.baseurl  | replace: ':num',page  }}">{{ page }}</a><li>
 	{% endif %}
 {% endfor %}
 
