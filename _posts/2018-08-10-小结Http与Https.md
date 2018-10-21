@@ -4,7 +4,7 @@ title:      "小结Http与Https"
 subtitle:   "--计算机网络小结知识01"
 date:       2018-08-10 10:20:01
 author:     "任庭玉"
-path:   "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537268670185&di=d2993e1286f2a08b579081290908086f&imgtype=0&src=http://n1.itc.cn/img8/wb/recom/2016/09/09/147339592392689600.JPEG"
+imgpath:   "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1537268670185&di=d2993e1286f2a08b579081290908086f&imgtype=0&src=http://n1.itc.cn/img8/wb/recom/2016/09/09/147339592392689600.JPEG"
 catalog: true
 tags:
     - web
