@@ -17,7 +17,7 @@
 	
 
 {% if paginator.total_pages > 1 %}
-<div class="pagination"> 
+<ul class="pagination"> 
 
   <!-- {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
@@ -29,6 +29,12 @@
     {% endif %}
   {% endfor %} -->
 
+  {% if paginator.previous_page %}
+  <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; 上一页</a></li>
+  {% else %}
+  <li><a href="#">&laquo; 上一页</a></li>
+  {% endif %}
+
 {% for page in (1..paginator.total_pages) %}
 	{% if page == 1 %}
 		<li><a href="/index.html">{{ page }}</a></li>
@@ -38,15 +44,17 @@
 {% endfor %}
 
  
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; 上一页</a>
+  
+
+  {% if paginator.next_page %}
+    <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页 &raquo;</a></li>
   {% else %}
-    <span>&laquo; 上一页</span>
+    <li><a href="#">下一页 &raquo;</a></li>
   {% endif %}
 
 
   
-</div>
+  </ul>
 {% endif %}
 
 </div>
