@@ -35,8 +35,11 @@
   {% endif %}
 
 
+
 {% for page in (1..paginator.total_pages) %}
-	{% if page == 1 %}
+  {% if page == paginator.page %}
+    <li><a>{{ page }}</a></li>  
+  {% elsif page == 1 %}
 		<li><a href="/index.html">{{ page }}</a></li>
   {% else %}
 		<li><a href="{{ site.paginate_path | prepend: site.baseurl |replace: '//', '/' | replace: ':num',page  }}">{{ page }}</a><li>
