@@ -35,17 +35,16 @@
   <li><a href="#">&laquo; 上一页</a></li>
   {% endif %}
 
+
 {% for page in (1..paginator.total_pages) %}
 	{% if page == 1 %}
 		<li><a href="/index.html">{{ page }}</a></li>
   {% else %}
-		<li><a href="{{ site.paginate_path | prepend: /index.html |replace: '//', '/' | replace: ':num',page  }}">{{ page }}</a><li>
+		<li><a href="{{ site.paginate_path | prepend: site.baseurl |replace: '//', '/' | replace: ':num',page  }}">{{ page }}</a><li>
 	{% endif %}
 {% endfor %}
 
  
-  
-
   {% if paginator.next_page %}
     <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页 &raquo;</a></li>
   {% else %}
